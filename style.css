@@ -41,16 +41,21 @@ header {
   align-items: center;
   height: 17.5vh; 
   padding: 0 3vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
   color: #fff;
   font-size: 6vw;
   margin-left: 1vw;
+  font-family: 'Noto Serif JP', serif;
 }
 
 header h3 {
   margin-left: auto; /* h3を右端に寄せる */
+  font-family: 'Noto Serif JP', serif;
 }
 
 header h3 a {
@@ -119,7 +124,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 1vw;
-  margin-top: 2vh;
+  margin-top: 17.5vh;
 }
 
 @media (max-width: 600px) {
