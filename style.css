@@ -63,7 +63,10 @@ header h3 a {
   text-decoration: none;
   font-size: 2.5vw;
 }
-
+.text_01, .text_02, .text_03 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+}
 .toc ul {
   flex-direction: column;
   justify-content: center;
@@ -188,6 +191,8 @@ footer {
   }
   .text_01, .text_02, .text_03 {
     font-size: 12vw; /* スマホでは行間を少し狭くする */
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
   }
   h2 {
     margin-left: 5vw; 
