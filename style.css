@@ -139,6 +139,9 @@ footer {
     flex-direction: column; /* 文字列を縦並びに */
     height: auto;           /* 高さを自動調整 */
     padding: 2vw 3vw;       /* 上下の余白を追加（必要に応じて調整） */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
   header h1 {
@@ -332,7 +335,8 @@ footer {
   }
 
   #about-content,
-  #feature-content {
+  #feature-content,
+  #introduction-content {
     width: 90vw !important;
     max-width: 90vw !important;
     margin: 0 auto !important;
@@ -343,7 +347,8 @@ footer {
   }
 
   #about-content p,
-  #feature-content p {
+  #feature-content p,
+  #introduction-content p {
     text-align: left !important;
     font-family: 'Noto Serif JP', serif !important;
     font-size: 1.2em !important;
