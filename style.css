@@ -134,25 +134,42 @@ footer {
   html, body {
     overflow-x: hidden;
   }
+
   header {
     flex-direction: column; /* 文字列を縦並びに */
     height: auto;           /* 高さを自動調整 */
     padding: 2vw 3vw;       /* 上下の余白を追加（必要に応じて調整） */
   }
+
   header h1 {
     margin-left: 0;
     font-size: 11.5vw;        /* スマホ用に文字サイズ調整（必要に応じて） */
-    margin-bottom: 0.0000001%;     /* h1とh3の間隔 */
+    margin-bottom: 0.0000001%; 
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: bold !important; 
   }
+
   header h3 {
     margin-left: 60vw;
     font-size: 7vw;         /* スマホ用に文字サイズ調整（必要に応じて） */
     margin-bottom: 0;
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: bold !important;
   }
+
+  h2 {
+    margin-left: 5vw; 
+    font-size: 8vw;
+    border-bottom: 0.6vw solid #3498db;
+    box-shadow: 0 2px 12px rgba(52,152,219,0.25);
+    padding-bottom: 1vw;
+  }
+
   .map-png img {
     text-align: center;
     width: 80vw;
   }
+
   .text_01 {
     position: absolute;
     z-index: 1;
@@ -161,9 +178,12 @@ footer {
     transform: translate(-50%, -50%);
     padding: 5px 10px;
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 12vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: bold !important;
   }
+
   .text_02 {
     position: absolute;
     z-index: 1;
@@ -173,10 +193,12 @@ footer {
     transform: translate(-50%, -50%);
     padding: 5px 10px;
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 12vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
-  
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: bold !important;
   }
+
   .text_03 {
     position: absolute;
     z-index: 1;
@@ -186,34 +208,12 @@ footer {
     transform: translate(-50%, -50%);
     padding: 5px 10px;
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 12vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
-  }
-}
-  @media (max-width: 600px) {
-  header h1,
-  header h3,
-  .text_01,
-  .text_02,
-  .text_03 {
     font-family: 'Noto Serif JP', serif !important;
     font-weight: bold !important;
   }
-  .text_01,
-  .text_02,
-  .text_03 {
-    font-size:12vw; 
-  }
-  h2 {
-    margin-left: 5vw; 
-    font-size: 8vw;
-    border-bottom: 0.6vw solid #3498db;
-    box-shadow: 0 2px 12px rgba(52,152,219,0.25);
-    padding-bottom: 1vw;
-  }
-  #team {
-    font-size: 5vw !important; /* お好みで調整してください */
-  }
+
   .toc a {
   color: #3498db;
   font-weight: bold;
@@ -230,6 +230,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
  .accordion-header {
     cursor: pointer;
     display: flex;
@@ -238,6 +239,7 @@ footer {
     font-size: 1.2em;
     margin-bottom: 40px;
   }
+  
   .icon {
   font-weight: bold;
   font-size: 20px;
@@ -246,7 +248,8 @@ footer {
   transition: transform 0.4s ease;
   display: inline-block;
   }
-   .accordion-content {
+  
+  .accordion-content {
     text-align: center;
     max-height: 0;
     transition: max-height 0.4s ease;
@@ -257,29 +260,29 @@ footer {
   .accordion-content.open {
     max-height: 700px; /* 高さを自動調整 */
   }
+  
   p {
     font-size: 4.5vw;
   }
+  
   li {
     font-size: 5vw;
   }
+  
   .container.left-align {
   text-align: left;
   }
+  
   .container.center-align {
   text-align: center;
   }
+  
   footer {
     font-size: 3vw;
   }
 }
 
 @media (min-width: 601px) {
-  .text_01,
-  .text_02,
-  .text_03 {
-    line-height: 2; /* パソコンでは行間を少し広げる */
-  }
   .text_01 {
     position: absolute;
     z-index: 1;
@@ -290,7 +293,9 @@ footer {
     color: #ffffff;
     font-size: 8vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+    line-height: 2;
   }
+
   .text_02 {
     position: absolute;
     z-index: 1;
@@ -301,7 +306,9 @@ footer {
     color: #ffffff;
     font-size: 8vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+    line-height: 2;
   }
+
   .text_03 {
     position: absolute;
     z-index: 1;
@@ -313,57 +320,51 @@ footer {
     color: #ffffff;
     font-size: 8vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+    line-height: 2;
   }
-  #team {
-    font-size: 3vw !important; /* お好みで調整してください */
-  }
+
   .toc a {
     color: #3498db;
     font-weight: bold;
     text-decoration: none;
     font-size: 2.5vw;
     transition: color 0.2s;
-  }  
-    #about-content p,
-  #feature-content p {
-    font-size: 1.2em; /* 読みやすさ向上（任意） */
-    line-height: 1.6;
   }
+
+  #about-content,
+  #feature-content {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+    padding: 0 2vw !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    overflow-x: hidden;
+  }
+
+  #about-content p,
+  #feature-content p {
+    text-align: left !important;
+    font-family: 'Noto Serif JP', serif !important;
+    font-size: 1.2em !important;
+    line-height: 1.8 !important;
+    margin: 0 0 1.5em !important;
+  }
+
   .accordion-content {
     width: 90vw;           /* 横幅を縮小（例：70vw） */
     max-width: 700px;      /* 最大幅を指定（お好みで調整） */
     margin: 0 auto;        /* 中央寄せ */
     text-align: center;
   }
+
   .accordion-content iframe {
     width: 100%;  
     height: 55vh;         /* ラッパーに合わせて広げる */
     display: block;
   }
+
   .icon {
     display: none;
-  }
-}
-
-@media (min-width: 601px) {
-  #about-content,
-  #feature-content {
-    all: unset; /* すべての継承スタイルを解除（強力） */
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 2vw;
-    box-sizing: border-box;
-    text-align: left;
-    font-family: 'Noto Serif JP', serif;
-  }
-
-  #about-content p,
-  #feature-content p {
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin: 0 0 1.5em;
   }
 }
