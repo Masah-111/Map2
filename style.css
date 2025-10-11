@@ -189,10 +189,20 @@ footer {
     font-size: 8vw;
     text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
   }
-  .text_01, .text_02, .text_03 {
-    font-size: 12vw; /* スマホでは行間を少し狭くする */
-    font-family: 'Noto Serif JP', serif;
-    font-weight: bold;
+}
+  @media (max-width: 600px) {
+  header h1,
+  header h3,
+  .text_01,
+  .text_02,
+  .text_03 {
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: bold !important;
+  }
+  .text_01,
+  .text_02,
+  .text_03 {
+    font-size:12vw; 
   }
   h2 {
     margin-left: 5vw; 
@@ -314,6 +324,11 @@ footer {
     font-size: 2.5vw;
     transition: color 0.2s;
   }  
+    #about-content p,
+  #feature-content p {
+    font-size: 1.2em; /* 読みやすさ向上（任意） */
+    line-height: 1.6;
+  }
   .accordion-content {
     width: 90vw;           /* 横幅を縮小（例：70vw） */
     max-width: 700px;      /* 最大幅を指定（お好みで調整） */
@@ -327,5 +342,28 @@ footer {
   }
   .icon {
     display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  #about-content,
+  #feature-content {
+    all: unset; /* すべての継承スタイルを解除（強力） */
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  #about-content p,
+  #feature-content p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 0 1.5em;
   }
 }
