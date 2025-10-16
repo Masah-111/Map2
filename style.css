@@ -339,6 +339,12 @@ footer {
     transition: color 0.2s;
   }
 
+  .map-png img {
+    text-align:center;
+    width: 30vw;
+    height: auto;
+  }
+
   #about-content,
   #feature-content,
   #introduction-content {
