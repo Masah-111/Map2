@@ -173,6 +173,11 @@ footer {
     width: 80vw;
   }
 
+  #team {
+    font-size: 5vw; /* 例：スマホで小さくする。必要に応じて調整してください */
+    line-height: 1.2;
+  }
+    
   .text_01 {
     position: absolute;
     z-index: 1;
